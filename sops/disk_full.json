@@ -1,0 +1,10 @@
+{
+  "error_key": "disk_full",
+  "risk": "medium",
+  "description": "Disk usage exceeded threshold",
+  "plan": [
+    {"cmd": "df -h"},
+    {"cmd": "sudo journalctl --vacuum-time=7d"},
+    {"cmd": "df -h"}
+  ]
+}
