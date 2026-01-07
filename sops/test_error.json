@@ -1,0 +1,7 @@
+{
+  "risk": "medium",
+  "description": "Test SOP",
+  "plan": [
+    "echo hello"
+  ]
+}
