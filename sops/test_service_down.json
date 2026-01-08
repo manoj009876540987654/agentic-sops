@@ -1,0 +1,13 @@
+{
+  "error_key": "test_service_down",
+  "risk": "medium",
+  "description": "Test service is not responding",
+  "plan": [
+    {
+      "cmd": "sudo systemctl restart test-service"
+    },
+    {
+      "cmd": "sudo systemctl status test-service"
+    }
+  ]
+}
