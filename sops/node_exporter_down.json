@@ -1,0 +1,13 @@
+{
+  "error_key": "node_exporter_down",
+  "risk": "medium",
+  "description": "Node Exporter service is not running",
+  "plan": [
+    {
+      "cmd": "sudo systemctl restart node_exporter"
+    },
+    {
+      "cmd": "sudo systemctl status node_exporter"
+    }
+  ]
+}
