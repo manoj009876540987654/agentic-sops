@@ -3,7 +3,7 @@
   "risk": "low",
   "description": "Apache service is stopped on Linux VM",
   "plan": [
-    {"cmd": "sudo systemctl start apache2"},
-    {"cmd": "sudo systemctl is-active apache2"}
+    {"cmd": "systemctl start apache2"},
+    {"cmd": "systemctl is-active apache2"}
   ]
 }
