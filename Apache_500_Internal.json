@@ -1,0 +1,11 @@
+{
+  "error_key": "apache_500",
+  "risk": "high",
+  "description": "Apache is returning 500 Internal Server Error due to application crash or misconfiguration",
+  "plan": [
+    { "cmd": "sudo tail -n 20 /var/log/apache2/error.log" },
+    { "cmd": "sudo apachectl configtest" },
+    { "cmd": "sudo systemctl reload apache2" },
+    { "cmd": "sudo systemctl restart apache2" }
+  ]
+}
