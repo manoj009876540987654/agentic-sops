@@ -1,0 +1,11 @@
+{
+  "error_key": "apache_403_forbidden",
+  "risk": "low",
+  "description": "Apache is returning 403 Forbidden due to permission or access issues",
+  "plan": [
+    { "cmd": "chmod -R 755 /var/www/html" },
+    { "cmd": "chown -R www-data:www-data /var/www/html" },
+    { "cmd": "systemctl reload apache2" },
+    { "cmd": "curl -I http://localhost" }
+  ]
+}
